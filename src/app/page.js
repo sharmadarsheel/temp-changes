@@ -55,7 +55,7 @@ export default function Home() {
             <Link href="/community" className="btn btn-primary btn-lg">
               Join the Community <ArrowRight size={18} />
             </Link>
-            <Link href="/events" className="btn btn-ghost btn-lg">
+            <Link href="/hackathons" className="btn btn-ghost btn-lg">
               Upcoming Events
             </Link>
           </div>
