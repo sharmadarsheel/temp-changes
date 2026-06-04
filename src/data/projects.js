@@ -7,7 +7,7 @@ export const projects = [
     techStack: ['Python', 'TensorFlow', 'React', 'FastAPI'],
     hackathon: 'HackAI 2025',
     github: 'https://github.com',
-    demo: 'https://demo.com',
+    demo: 'https://google.com',
     upvotes: 342,
     badge: 'winner',
     image: null,
