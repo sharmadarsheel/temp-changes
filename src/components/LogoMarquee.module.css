@@ -17,19 +17,34 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9375rem;
   color: var(--text-dim);
   white-space: nowrap;
   padding: var(--space-2) var(--space-4);
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity var(--transition-fast);
 }
 
 .logo:hover {
   opacity: 1;
   color: var(--text-muted);
+}
+
+.logoImg {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.5);
+  transition: filter var(--transition-fast);
+}
+
+.logo:hover .logoImg {
+  filter: grayscale(0%) brightness(1);
 }
 
 @keyframes scrollMarquee {
