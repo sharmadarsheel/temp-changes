@@ -229,8 +229,12 @@ export default function Home() {
                   <div className={styles.tierLogos}>
                     {list.map((s) => (
                       <a key={s.name} href={s.website} className={styles.sponsorLogo} target="_blank" rel="noopener noreferrer" title={s.name}>
-                        <span className={styles.sponsorInitial}>{s.logo}</span>
-                        <span className={styles.sponsorName}>{s.name}</span>
+                        {s.logo.startsWith('/') ? (
+  <img src={s.logo} alt={s.name} style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
+) : (
+  <span className={styles.sponsorInitial}>{s.logo}</span>
+)}
+<span className={styles.sponsorName}>{s.name}</span>
                       </a>
                     ))}
                   </div>
