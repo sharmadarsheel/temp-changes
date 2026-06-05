@@ -78,7 +78,7 @@ export const projects = [
     image: null,
   },
   // There were total 7 winners in the HacVison hackathon, but I have added only 6 here. You can add the 7th winner as well if you have the details.
-  /* {
+{
     id: 'code-collab',
     name: 'CodeCollab Live',
     team: 'Pair Programmers',
@@ -117,5 +117,5 @@ export const projects = [
     badge: 'most-upvoted',
     image: null,
   },
-  */
+
 ];
