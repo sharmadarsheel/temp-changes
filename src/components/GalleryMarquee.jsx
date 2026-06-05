@@ -7,13 +7,27 @@ const images = [
   'HUHackstorm4.jpg', 'HUHackstorm5.jpg', 'HUHackstorm6.jpg', 
   'HUHackstorm7.jpg', 'HUHackstormw2.jpg', 'HuEvents1.jpg', 
   'HuEvents2.jpg', 'HuEvents4.jpg', 'HuEvents5.jpg', 
-  'HuEvents6.jpg', 'HuEvents7.jpg', 'HuTeam.jpg'
+  'HuEvents6.jpg', 'HuEvents7.jpg', 'HuTeam.jpg',
+  'Event_Orchestration.png',
+  'hackstorm_speaker.jpg',
+  'hackstorm_booth.jpg',
+  'hackstorm_stage.jpg',
+  'hackstorm_inauguration.jpg',
+  'stellar_bootcamp.jpg',
+  'hackstorm_discussions.jpg',
+  'hackstorm_hall.jpg',
+  'hackstorm_winners.jpg',
+  'hackstorm_letters.jpg',
+  'hive_mentors.jpg',
+  'hackstorm_developers.jpg',
+  'hackstorm_focus.jpg',
+  'hackstorm_mentoring.jpg'
 ];
 
 export default function GalleryMarquee() {
   // Split images into two rows for the marquee
-  const row1 = images.slice(0, 11);
-  const row2 = images.slice(11);
+  const row1 = images.slice(0, 18);
+  const row2 = images.slice(18);
 
   return (
     <div className={styles.galleryContainer}>
