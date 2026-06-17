@@ -9,7 +9,7 @@ export const sponsors = {
   ],
   corporatePartners: [
     { name: 'Nextease Solutions', logo: '/sponsors/nextease.jpg', website: 'https://www.nexteasesolutions.in/', description: 'A software development and IT consulting firm.' },
-    { name: 'Trainzex AI', logo: '/sponsors/trainzex.jpg', website: 'https://trainzexai.in', description: 'A firm providing AI solutions and training.' },
+    { name: 'Trainzex AI', logo: '/sponsors/trainzex.jpg', website: 'https://trainzexai.in', description: 'Automation and software solutions ' },
   ],
 };
 

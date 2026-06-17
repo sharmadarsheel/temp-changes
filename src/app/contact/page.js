@@ -18,7 +18,17 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const { supabase } = await import('@/lib/supabase');
+  await supabase.from('contact_submissions').insert([{
+    name: formData.name,
+    email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
+  }]);
+  setSubmitted(true);
+};
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
