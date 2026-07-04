@@ -58,44 +58,12 @@
 
 .placeholderIcon { font-size: 56px; opacity: 0.4; }
 
-.episodeTag {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: var(--gradient-primary);
-  color: white;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 4px 10px;
-  border-radius: 999px;
-}
-
-.ytBtn {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #FF0000;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 999px;
-  text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.ytBtn:hover { opacity: 0.9; transform: scale(1.05); }
-
 .body {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex: 1;
 }
 
 .guest {
@@ -104,7 +72,7 @@
   gap: 10px;
 }
 
-.guestAvatar {
+.episodePill {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -112,11 +80,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 15px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 10px;
   color: white;
   flex-shrink: 0;
-  overflow: hidden;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .guestName {
@@ -144,23 +114,6 @@
   line-height: 1.6;
 }
 
-.episodePill {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 10px;
-  color: white;
-  flex-shrink: 0;
-  text-align: center;
-  line-height: 1.2;
-}
-
 .ytBtn {
   display: flex;
   align-items: center;
@@ -182,4 +135,4 @@
 
 @media (max-width: 640px) {
   .grid { grid-template-columns: 1fr; }
-  }
+}
