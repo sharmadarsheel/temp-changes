@@ -1,0 +1,145 @@
+.hero {
+  padding: var(--space-20) 0 var(--space-10);
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.ytLink {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  border-color: rgba(255,106,0,0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.thumbnailImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnailPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,106,0,0.15), rgba(0,136,255,0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderIcon { font-size: 56px; opacity: 0.4; }
+
+.episodeTag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--gradient-primary);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.ytBtn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FF0000;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.ytBtn:hover { opacity: 0.9; transform: scale(1.05); }
+
+.body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.guestAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.guestName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.guestDesig {
+  font-size: 12px;
+  color: var(--accent-secondary-light);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.summary {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  }
