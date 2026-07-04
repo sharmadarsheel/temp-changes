@@ -2,13 +2,13 @@ export const podcasts = [
   {
     id: 1,
     episode: 'EP 01',
-    guest: 'Rahul Mehta',
-    designation: 'CTO at TechCorp India',
+    guest: 'Mihir Shelar',
+    designation: 'Technical Manager at Amazon',
     guestPhoto: '/podcasts/rahul.jpg',
-    title: 'Building Scalable Startups from College Campuses',
-    summary: 'Rahul shares how he built a ₹10Cr startup while still in college and what advice he has for student builders.',
+    title: 'Insights From The Tech Frontier',
+    summary: 'A candid conversation on building tech at scale, leadership and real-world impact.',
     thumbnail: null,
-    youtubeUrl: 'https://www.youtube.com/@hackerunity',
+    youtubeUrl: 'https://youtu.be/-A9QjJcd32k?si=D4SzN1z2DkrE4YZU',
   },
   {
     id: 2,
