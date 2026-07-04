@@ -22,6 +22,8 @@ import { events } from '@/data/events';
 import { projects } from '@/data/projects';
 import { sponsors } from '@/data/sponsors';
 import styles from './page.module.css';
+import PodcastCard from '@/components/PodcastCard';
+import { podcasts } from '@/data/podcasts';
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -196,7 +198,19 @@ export default function Home() {
 
 
 
-
+      {/* ━━ INDUSTRY INSIDER PODCAST ━━ */}
+      <AnimatedSection>
+        <section className={`section ${styles.howSection}`}>
+          <div className="container">
+            <SectionHeading label="Podcast" title="Industry Insider" subtitle="Real conversations with builders, founders and industry leaders" />
+            <div className={styles.podcastScroll}>
+              {podcasts.map((p) => (
+                <PodcastCard key={p.id} podcast={p} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
 
 
 
