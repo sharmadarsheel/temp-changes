@@ -27,7 +27,13 @@ export default function PodcastCard({ podcast }) {
       </div>
       <div className={styles.body}>
         <div className={styles.guest}>
-          <div className={styles.guestAvatar}>{podcast.guest[0]}</div>
+          <div className={styles.guestAvatar}>
+  {podcast.guestPhoto ? (
+    <img src={podcast.guestPhoto} alt={podcast.guest} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+  ) : (
+    podcast.guest[0]
+  )}
+</div>
           <div>
             <div className={styles.guestName}>{podcast.guest}</div>
             <div className={styles.guestDesig}>{podcast.designation}</div>
