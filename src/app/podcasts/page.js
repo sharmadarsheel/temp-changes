@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import AnimatedSection from '@/components/AnimatedSection';
 import { podcasts } from '@/data/podcasts';
@@ -9,6 +7,12 @@ export const metadata = {
   title: "Industry Insider Podcast — Hacker's Unity",
   description: "Real conversations with builders, founders and industry leaders.",
 };
+
+const YTIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+  </svg>
+);
 
 export default function PodcastsPage() {
   return (
@@ -26,12 +30,9 @@ export default function PodcastsPage() {
                 href="https://www.youtube.com/@hackerunity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`btn btn-primary`}
+                className="btn btn-primary"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-                Watch on YouTube
+                <YTIcon /> Visit our YouTube Channel
               </a>
             </div>
           </AnimatedSection>
@@ -52,40 +53,25 @@ export default function PodcastsPage() {
                         <span className={styles.placeholderIcon}>🎙️</span>
                       </div>
                     )}
-                    <span className={styles.episodeTag}>{p.episode}</span>
+                  </div>
+                  <div className={styles.body}>
+                    <div className={styles.guest}>
+                      <div className={styles.episodePill}>{p.episode}</div>
+                      <div>
+                        <div className={styles.guestName}>{p.guest}</div>
+                        <div className={styles.guestDesig}>{p.designation}</div>
+                      </div>
+                    </div>
+                    <h3 className={styles.title}>{p.title}</h3>
+                    <p className={styles.summary}>{p.summary}</p>
                     <a
                       href={p.youtubeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.ytBtn}
                     >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                      </svg>
-                      Watch
+                      <YTIcon /> Watch on YouTube
                     </a>
-                  </div>
-                  <div className={styles.body}>
-                    <div className={styles.guest}>
-  <div className={styles.episodePill}>{p.episode}</div>
-  <div>
-    <div className={styles.guestName}>{p.guest}</div>
-    <div className={styles.guestDesig}>{p.designation}</div>
-  </div>
-</div>
-<h3 className={styles.title}>{p.title}</h3>
-<p className={styles.summary}>{p.summary}</p>
-<a
-  href={p.youtubeUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className={styles.ytBtn}
->
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-  </svg>
-  Watch on YouTube
-</a>
                   </div>
                 </div>
               ))}
@@ -95,4 +81,4 @@ export default function PodcastsPage() {
       </section>
     </>
   );
-                }
+  }
