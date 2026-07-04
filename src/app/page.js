@@ -231,9 +231,9 @@ const scrollPodcastRight = () => {
               </button>
             </div>
             <div className={styles.viewAll}>
-              <a href="https://www.youtube.com/@hackerunity" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-                View All Episodes <ChevronRight size={16} />
-              </a>
+              <Link href="/podcasts" className="btn btn-ghost">
+  View All Episodes <ChevronRight size={16} />
+</Link>
             </div>
           </div>
         </section>
