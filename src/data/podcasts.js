@@ -46,7 +46,7 @@ export const podcasts = [
   {
     id: 5,
     episode: 'EP 05',
-    guest: 'Ankur Bhatnagar ',
+    guest: 'Ankur Bhatnagar',
     designation: 'NA',
     guestPhoto: '/podcasts/ankursir.jpg',
     title: 'NA',
@@ -75,5 +75,16 @@ export const podcasts = [
     summary: 'Discover the roadmap to becoming a successful data scientist. Pratik Khedekar shares expert advice on building portfolios, leveraging AI trends, and bridging the gap between technical machine learning models and impactful business decision-making.',
     thumbnail: '/podcasts/ep7.jpg',
     youtubeUrl: 'https://youtu.be/zCx4zvcXK6o',
+  },
+  {
+    id: 8,
+    episode: 'EP 08',
+    guest: 'Eshaan Jain',
+    designation: 'Senior Product Manager at Mphasis Silverline (T-Mobile), Former Senior Technical Product Manager at Amazon',
+    guestPhoto: '/podcasts/ankursir.jpg',
+    title: 'Inside Product Management: Secrets to Success',
+    summary: 'Discover the realities of product management with industry expert Eshaan Jain. This episode explores career-defining strategies, AI-driven transformations, and essential skills every aspiring PM needs to navigate the tech industry successfully.',
+    thumbnail: '/podcasts/ep8.jpg',
+    youtubeUrl: 'https://youtu.be/dMZYpdd7XHI',
   },
 ];
