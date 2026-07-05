@@ -113,7 +113,7 @@
   gap: 8px;
   width: 100%;
   padding: 12px;
-  background: #FF0000;
+  background: var(--gradient-primary);
   color: white;
   font-size: 13px;
   font-weight: 600;
