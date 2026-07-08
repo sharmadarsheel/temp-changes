@@ -5,7 +5,7 @@ export const hackathons = [
     name: 'Kestra Orchestration Challenge',
     organizer: 'WeMakeDevs',
     organizerLogo: "",
-    status: 'LIVE',
+    status: 'COMPLETED',
     mode: 'Online',
     domain: 'Open Source',
     prize: '$4,000',
